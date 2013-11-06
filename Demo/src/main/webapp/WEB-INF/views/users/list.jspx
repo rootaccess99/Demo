@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_ibps_demo_User" items="${users}" z="Ve+j38RSmPlafrwv7nqLZ5wxEx4=">
+        <table:table data="${users}" id="l_com_ibps_demo_User" path="/users" typeIdFieldName="userid" z="QJ95Q6KjKSEQ1nzb2xjWiLoTEP0=">
+            <table:column id="c_com_ibps_demo_User_username" property="username" z="93bB0oWnmgA9BF5jGyQZ6B78zZQ="/>
+            <table:column id="c_com_ibps_demo_User_password" property="password" z="oX8Jv42yO64eLKWeRJyE+IPN6FU="/>
+            <table:column id="c_com_ibps_demo_User_type" property="type" z="SY8m97tniP61Y4W8PfzhEoDPv9g="/>
+            <table:column id="c_com_ibps_demo_User_extra" property="extra" z="gVrBT0V/bdtjX+jdobddX5NblqY="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_ibps_demo_Examl" items="${examls}" z="p2Y7FGd0E0RXlwCzT2y4aEQgrec=">
+        <table:table data="${examls}" id="l_com_ibps_demo_Examl" path="/examls" typeIdFieldName="questionId" z="G0ZeLYk2d/U0yc9XxxHrtlG2/tY=">
+            <table:column id="c_com_ibps_demo_Examl_questin" property="questin" z="og7ja1Hu+3KDYby6iuBBosYPIR4="/>
+            <table:column id="c_com_ibps_demo_Examl_a" property="a" z="Ecb3H3541PgFQG8n5pu+QYuD1Os="/>
+            <table:column id="c_com_ibps_demo_Examl_b" property="b" z="XsTgLVKc7qOb4lyznLP1l+HaUfk="/>
+            <table:column id="c_com_ibps_demo_Examl_c" property="c" z="vvIwuIx9WDrlPt208ymjsPBV+MI="/>
+            <table:column id="c_com_ibps_demo_Examl_d" property="d" z="ixtYP2/ZNqGSwQYS0vVLpvDXKn0="/>
+            <table:column id="c_com_ibps_demo_Examl_answer" property="answer" z="87bnH+GVfwqLD91AGOX6urVNQe0="/>
+        </table:table>
+    </page:list>
+</div>

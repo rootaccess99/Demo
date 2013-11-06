@@ -1,0 +1,39 @@
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-11-03 16:33:52
+project --topLevelPackage com.Ibps.Demo --projectName Demo --java 6 --packaging JAR
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-11-03 16:34:09
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-11-03 17:20:36
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-11-03 18:00:57
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-11-03 18:17:17
+jpa setup --database MYSQL --provider HIBERNATE 
+// [failed] database reverse engineer --schema ibps
+addon search 
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml
+osgi obr start --bundleSymbolicName org.springframework.roo.wrapping.mysql-connector-java
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml
+addon install id 10
+// [failed] database reverse engineer --schema ibps
+// [failed] database reverse engineer --schema ibps
+database reverse engineer --schema ibps
+web mvc setup
+web mvc all --package com.ibps.demo.web
+web mvc json all 
+json all 
+web mvc all --package com.ibps.demo.web
+osgi ps 
+osgi start --url http://spring-roo-addons.googlecode.com/files/net.tzolov.httprepresentations.roo.addon-3.2.0.jar 
+http content-negotiation setup
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-11-03 19:22:18
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-11-03 19:36:51
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-11-03 19:41:09
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-11-03 19:41:28
+addon list 
+web mvc json all 
+http content-negotiation add oxm --class ~.User
+http content-negotiation add oxm --class ~.Examl
+json all 
+osgi start --url http://spring-roo-addons.googlecode.com/files/net.tzolov.jaxb.roo.addon-3.2.0.jar 
+osgi ps
+jaxb xsd compiler setup 
+http content-negotiation add oxm --class ~.User
+http content-negotiation add oxm --class ~.User
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-11-03 21:09:09

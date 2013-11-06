@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_ibps_demo_Examl" object="${examl}" path="/examls" z="D0HPfvHHVeJ3ISTVTGVEc5Cz2tI=">
+        <field:display field="questin" id="s_com_ibps_demo_Examl_questin" object="${examl}" z="s/pgjhqghhxVsYJ9A7xr/DlKFpE="/>
+        <field:display field="a" id="s_com_ibps_demo_Examl_a" object="${examl}" z="6/hCmFKkgqI5lJB55FvysxYgvXY="/>
+        <field:display field="b" id="s_com_ibps_demo_Examl_b" object="${examl}" z="71lzJmmBwhn3ry/cnAMAlgAx5Vg="/>
+        <field:display field="c" id="s_com_ibps_demo_Examl_c" object="${examl}" z="M1vgvSNhPT4Qh1SeyOU/kPr5JoY="/>
+        <field:display field="d" id="s_com_ibps_demo_Examl_d" object="${examl}" z="0FonfNas8ghiWR9INWRslx48Wi8="/>
+        <field:display field="answer" id="s_com_ibps_demo_Examl_answer" object="${examl}" z="LGMFnr1+A6zot4uQW2r+QhgLmEI="/>
+    </page:show>
+</div>

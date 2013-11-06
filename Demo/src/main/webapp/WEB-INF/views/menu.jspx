@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_user" z="uoTSf/uIZ821ZppidzS9aO776yk=">
+            <menu:item id="i_user_new" messageCode="global_menu_new" url="/users?form" z="Zv1m8u2rG+JFKcvJ+AHVVK0ey24="/>
+            <menu:item id="i_user_list" messageCode="global_menu_list" url="/users?page=1&amp;size=${empty param.size ? 10 : param.size}" z="4MY4uybxa60Q1G2rlI5bOwg+sm0="/>
+        </menu:category>
+        <menu:category id="c_examl" z="7OMfV+IuBmzTiJjQ29VlwulYu7A=">
+            <menu:item id="i_examl_new" messageCode="global_menu_new" url="/examls?form" z="coZKjx+8AxmBGBRKJHvJifOS3eo="/>
+          
+            <menu:item id="i_examl_list" messageCode="global_menu_list" url="/examls?page=1&amp;size=${empty param.size ? 10 : param.size}" z="UjwCW3z7I0A62ZqM+3r8GMhK1aM="/>
+       		<menu:item id="hi" label="hello" url="/hello" ></menu:item>
+        	<menu:item id="hi" label="hello" url="/hello/2" ></menu:item>
+        		<menu:item id="hi" label="hello" url="/hello/2.json" ></menu:item>
+        
+        </menu:category>
+    </menu:menu>
+</div>

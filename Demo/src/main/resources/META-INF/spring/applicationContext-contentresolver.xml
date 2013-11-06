@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:context="http://www.springframework.org/schema/context" xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:oxm="http://www.springframework.org/schema/oxm" xmlns:p="http://www.springframework.org/schema/p" xmlns:util="http://www.springframework.org/schema/util" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/oxm http://www.springframework.org/schema/oxm/spring-oxm-3.1.xsd   http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd   http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd   http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+										
+	<!-- ObjectMapper Creation -->
+	<bean class="com.ibps.demo.util.JsonObjectMapperFactory" factory-method="createObjectMapper" id="jsonObjectMapper"/>
+	
+	<bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+		<property name="defaultContentType" value="text/html"/>
+		<property name="ignoreAcceptHeader" value="true"/>
+		<property name="favorPathExtension" value="true"/>
+		
+		<property name="contentNegotiationManager">
+			<bean class="org.springframework.web.accept.ContentNegotiationManager">
+				<constructor-arg>
+					<bean class="org.springframework.web.accept.PathExtensionContentNegotiationStrategy">
+						<constructor-arg>
+							<map>
+								<entry key="json" value="application/json"/>
+								<entry key="jsonp" value="application/javascript"/>
+								<entry key="xml" value="application/xml"/>
+							</map>
+						</constructor-arg>
+					</bean>
+				</constructor-arg>
+			</bean>
+		</property>
+		
+		<property name="defaultViews">
+			<list>
+				<bean class="org.springframework.web.servlet.view.json.MappingJacksonJsonView">
+				 	<property name="objectMapper" ref="jsonObjectMapper"/>
+				 	<property name="extractValueFromSingleKeyModel" value="true"/>
+				</bean>
+				<bean class="com.ibps.demo.util.MappingJacksonJsonpView">				
+				 	<property name="objectMapper" ref="jsonObjectMapper"/>
+				 	<property name="extractValueFromSingleKeyModel" value="true"/>				
+				</bean>
+			<bean class="org.springframework.web.servlet.view.xml.MarshallingView">
+                    <property name="marshaller" ref="jaxbMarshaller"/>
+                </bean>
+            </list>
+		</property>
+	</bean>				
+<oxm:jaxb2-marshaller id="jaxbMarshaller">
+        <oxm:class-to-be-bound name="com.ibps.demo.User"/>
+    <oxm:class-to-be-bound name="com.ibps.demo.Examl"/>
+    </oxm:jaxb2-marshaller>
+</beans>

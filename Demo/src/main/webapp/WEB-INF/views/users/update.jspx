@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_ibps_demo_User" idField="userid" modelAttribute="user" path="/users" versionField="none" z="/i0BPo1soZvhVX7F2ALZ93GQ73w=">
+        <field:input field="username" id="c_com_ibps_demo_User_username" z="yjsqQOWicY+DJWHrn8QpnpwU10o="/>
+        <field:input field="password" id="c_com_ibps_demo_User_password" z="in0b3QuR1rLNaSnidAxOz1jKMk8="/>
+        <field:input field="type" id="c_com_ibps_demo_User_type" z="Y7qC9L56mQ5MojH6MQkmf1kDm2s="/>
+        <field:input field="extra" id="c_com_ibps_demo_User_extra" z="bTdsrkqCHXYEbO/k+q9W49f+3yQ="/>
+    </form:update>
+</div>

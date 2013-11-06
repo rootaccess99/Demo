@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_ibps_demo_Examl" idField="questionId" modelAttribute="examl" path="/examls" versionField="none" z="X9ptlBpx4HDhYz9oVU0U/lJfsWk=">
+        <field:input field="questin" id="c_com_ibps_demo_Examl_questin" z="qAml5S68qwi8K1ZBlE3Cfl250Rw="/>
+        <field:input field="a" id="c_com_ibps_demo_Examl_a" z="2T2OO3qV3QoQcDKyqZgnX7weW/c="/>
+        <field:input field="b" id="c_com_ibps_demo_Examl_b" z="L2a+3pCHVI2V6bK48gnnOagHUbY="/>
+        <field:input field="c" id="c_com_ibps_demo_Examl_c" z="pX/uAMprPtXM7VF5J8BKzfmWKUA="/>
+        <field:input field="d" id="c_com_ibps_demo_Examl_d" z="QoY1GYXHg9uYGftV6B/GvYPc/SM="/>
+        <field:input field="answer" id="c_com_ibps_demo_Examl_answer" z="Bp9h1J8EO73MvQJgdmQ0dloHQSg="/>
+    </form:update>
+</div>
